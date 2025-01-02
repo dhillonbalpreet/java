@@ -9,10 +9,10 @@ class SumFunction {
                
                int sum = sumFunc(i,j);
                
-                    System.out.print("Sum = " + sum);
+                    System.out.println("Sum = " + sum);
                int prod = prodFunc(i,j);
                
-                    System.out.print("Procuct = " + prod);
+                    System.out.println("Procuct = " + prod);
                     
                
                 }

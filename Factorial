@@ -1,0 +1,23 @@
+import java.io.*;
+class Factorial 
+{
+  
+     public static void main(String[] args)throws IOException
+        {
+               BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+               System.out.print("Enter number to calculate factorial " );
+               int i = Integer.parseInt(br.readLine());
+               
+              System.out.println("Factorial of "+ i + " = " +  factFunc(i));
+        }
+                         
+      public static int factFunc(int a)
+       {
+           int f=1;
+           for(int i = a; i >0;i--)
+            {    f= f*i;  }
+            return f;  
+
+      }
+
+}

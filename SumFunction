@@ -10,6 +10,9 @@ class SumFunction {
                int sum = sumFunc(i,j);
                
                     System.out.print("Sum = " + sum);
+               int prod = prodFunc(i,j);
+               
+                    System.out.print("Procuct = " + prod);
                     
                
                 }
@@ -19,4 +22,10 @@ class SumFunction {
                  int s= a+b;
                  return s;
                 }
+                public static int prodFunc(int a, int b)
+                {
+                 int p= a*b;
+                 return p;
+                }
+
 }

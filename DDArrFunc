@@ -1,0 +1,70 @@
+
+
+
+    import java.io.*;
+class DDArrFunc 
+{
+  public static void main(String args[])throws IOException
+  {
+     arryI();
+     
+  }
+
+
+public static void arryI()throws IOException
+{
+ BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+        System.out.println("Enter the number of rows");
+        int rows = Integer.parseInt(br.readLine());
+
+        System.out.println("Enter the number of Columns");
+        int columns = Integer.parseInt(br.readLine());
+
+int matrix[][] = new int[rows][columns];
+System.out.println("Enter the numbers");
+for(int i =0;i<rows; i++)
+{
+for(int j =0;j<columns; j++)
+    {  
+        matrix[i][j]=Integer.parseInt(br.readLine());
+      }
+
+}
+for(int i =0;i<rows; i++)
+{
+for(int j =0;j<columns; j++)
+    {  
+        System.out.print(matrix[i][j] +" ");
+      }
+System.out.println("");
+}
+System.out.println("Enter the number you need to find indices for");
+int n = Integer.parseInt(br.readLine());
+for(int i =0;i<rows; i++)
+{
+for(int j =0;j<columns; j++)
+    {  
+        if(n==matrix[i][j] )
+{ System.out.println("Indices for "+ n +"is (" + i + ","+j+")");
+}
+      }
+}
+}
+}
+
+/**
+
+
+System.out.println("Enter the number you need to find indices for");
+int n = Integer.parseInt(br.readLine());
+for(int i =0;i<rows; i++)
+{
+for(int j =0;j<columns; j++)
+    {  
+        if(n==matrix[i][j] )
+{ System.out.println("Indices for "+ n +"is (" + i + ","+j+")");
+}
+      }
+}
+**/

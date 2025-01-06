@@ -1,0 +1,48 @@
+import java.io.*;
+class DDArray
+
+{
+  public static void main(String args[])throws IOException
+  {
+      BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+        System.out.println("Enter the number of rows");
+        int rows = Integer.parseInt(br.readLine());
+
+        System.out.println("Enter the number of Columns");
+        int columns = Integer.parseInt(br.readLine());
+// User input for 2DArray
+int matrix[][] = new int[rows][columns];
+System.out.println("Enter the numbers");
+for(int i =0;i<rows; i++)
+{
+for(int j =0;j<columns; j++)
+    {  
+        matrix[i][j]=Integer.parseInt(br.readLine());
+      }
+
+}
+//2D Array Output
+for(int i =0;i<rows; i++)
+{
+for(int j =0;j<columns; j++)
+    {  
+        System.out.print(matrix[i][j] +" ");
+      }
+System.out.println("");
+}
+// Finding indicies in 2DArray
+System.out.println("Enter the number you need to find indices for");
+int n = Integer.parseInt(br.readLine());
+for(int i =0;i<rows; i++)
+{
+for(int j =0;j<columns; j++)
+    {  
+        if(n==matrix[i][j] )
+{ System.out.println("Indices for "+ n +"is (" + i + ","+j+")");
+}
+      }
+}
+
+  }
+}

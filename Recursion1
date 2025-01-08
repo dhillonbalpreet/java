@@ -1,0 +1,44 @@
+class Recursion1 {
+    static int n=5,i=1,sum=0;
+    
+    public static void main(String ag[])
+    {
+        printNum(n);//backwards
+          System.out.println("other way");
+        printNumbs(i,n);//forward
+        printSum(n,sum);
+    }
+ 
+  public static void printNum(int n) 
+     {
+        if( n==0)
+        {
+            return;
+        }
+        System.out.println(n);
+        printNum(n-1);
+       
+   }
+    public static void printNumbs(int i, int n ) 
+     {
+        if( i==n+1)
+        {
+            return;
+        }
+        System.out.println(i);
+        printNumbs(i+1,n);
+       
+   }
+   public static void printSum(int n,int sum) 
+     {
+         
+        if( n==1)
+        {
+            sum +=n;
+            System.out.println("Sum is "+sum);
+            return;
+        }
+        sum +=n;
+        printSum(n-1,sum);
+       
+   }

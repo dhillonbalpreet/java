@@ -5,13 +5,13 @@ static int n=7,i=1,sum=0,prod=1,a=0,b=1;
     
     public static void main(String ag[])
     {
-        printNum(n);//backwards
+        printNum(n);//print backwards
           System.out.println("other way");
-        printNumbs(i,n);//forward
-        printSum(n,sum);
-        printFact(n,prod);
+        printNumbs(i,n);//print forward
+        printSum(n,sum);//sum of number till n
+        printFact(n,prod);// factorial till n
         System.out.print("Fibonacci series till "+n +" is "+a+" "+b+);
-        printFib(a,b,sum,n,i);
+        printFib(a,b,sum,n,i);//fibonacci series till n 
     }
    // Bubble sort descending order
   public static void printNum(int n) 
